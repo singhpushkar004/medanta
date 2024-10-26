@@ -1,0 +1,136 @@
+body{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+/* nav styling start */
+
+.nav-item .nav-link{
+    position: relative;
+    top: 5;
+    font-size: 18px;
+    padding: 0.5rem 2rem;
+    color: rgb(49, 37, 37);
+    text-transform: capitalize;
+}
+.nav-item .nav-link::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #dd3f3f;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+}
+.nav-link:hover{
+    color: #dd3f3f;
+}
+.nav-link:hover::after{
+    width: 100%;
+}
+.nav-item{
+    opacity: 0;
+    animation: translateY(-20px);
+    animation: fadeIn 0.6s forwards;
+}
+.nav-item:nth-child(1){animation-delay: 0.4s;}
+.nav-item:nth-child(2){animation-delay:0.6 ;}
+.nav-item:nth-child(3){animation-delay: 0.6s;}
+.nav-item:nth-child(4){animation-delay: 0.8s;}
+@keyframes fadeIn{
+    form{
+        opacity: 0;
+        transform: translateY(20px);
+
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#dropdown{
+    min-width: 300px; 
+    padding: 1rem; 
+    position: absolute;
+    top: 50px;
+}
+.dropdown-item {
+    white-space: nowrap;
+}
+.dropdown-header {
+    font-weight: bold;
+    padding: 0.5rem 1rem; 
+    background-color: #f8f9fa; 
+}
+/* Styles for columns */
+
+.dropdown:hover .dropdown-menu{
+    display: block;
+    position: absolute;
+    top: 40px;
+    padding: 1rem;
+    
+}
+/* nav end */
+/* slider css */
+/* body style start */
+#savers{
+    background-image: url('../images/slider2.jpg');
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+}
+/* body style end */
+/* mdanta start */
+#medanta{
+    background-image: url('../images/why-medanta-bg.png');
+    height: 600px;
+    background-size: cover;
+}
+/* medanta end */
+/* next start */
+.next{
+    background-image: url('../images/services.jpg');
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+}
+/* next end */
+
+/* contact us style start */
+
+#contact{
+    background-image: url('../images/contact-banner-lg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+}
+#career-box{
+    height: 480px;
+    overflow: auto;
+}
+/* contact us style end */
+/* opinio style start */
+#opinion{
+    background-image: url('../images/sopinion.jpg');
+    height: 600px;
+    background-size: cover;
+    background-position:center;
+}
+/* #scard{
+    height: inherit;
+} */
+/* opinion style end */
+.justify{
+    text-align: justify;
+}
+#get{
+    background-image: url('../images/get-in.jpg');
+    background-position:  center;
+    background-size: cover;
+    height: 300px;
+}
